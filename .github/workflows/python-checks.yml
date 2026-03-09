@@ -33,8 +33,7 @@ jobs:
         pylint tests/
 
     - name: Run mypy
-      run: |
-        run: mypy app.py
+      run: mypy app.py
 
     - name: Run pytest
       run: |
