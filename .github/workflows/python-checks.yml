@@ -30,12 +30,12 @@ jobs:
 
     - name: Run pylint
       run: |
-        pylint --disable=C,R,W app.py tests/
+        pylint tests/
 
     - name: Run mypy
       run: |
-        mypy app.py
+        mypy app.py tests/
 
     - name: Run pytest
       run: |
-        pytest tests/
+        pytest tests
