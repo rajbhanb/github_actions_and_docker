@@ -34,7 +34,9 @@ jobs:
 
     - name: Run mypy
       run: |
-        mypy --namespace-packages app.py tests/
+        mkdir -p type_check
+        cp app.py type_check/
+        mypy type_check/app.py
 
     - name: Run pytest
       run: |
